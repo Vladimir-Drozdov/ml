@@ -1,0 +1,20 @@
+cmd: python src/prepare.py data/data.xml
+deps:
+- path: data/data.xml
+  hash: md5
+  md5: 22a1a2931c8370d3aeedd7183606fd7f
+  size: 14445097
+- path: src/prepare.py
+  hash: md5
+  md5: da099ba70baa5387cdd8e3d71800ef42
+  size: 2233
+params:
+  params.yaml:
+    prepare.seed: 20170428
+    prepare.split: 0.2
+outs:
+- path: data/prepared
+  hash: md5
+  md5: 6652640f2cde8646134c9b5cdfb4583f.dir
+  size: 0
+  nfiles: 2
